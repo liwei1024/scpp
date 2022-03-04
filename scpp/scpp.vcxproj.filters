@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="curl_http">
+      <UniqueIdentifier>{9d34ec01-d90d-4a35-a67e-b1b40bb13719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tcp_socket">
+      <UniqueIdentifier>{9d19e2d2-035e-4bdd-a61a-0fe82e8c4155}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="scpp.cpp" />
+    <ClCompile Include="curl_http.cpp">
+      <Filter>curl_http</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp_client.cpp">
+      <Filter>tcp_socket</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp_server.cpp">
+      <Filter>tcp_socket</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp_socket.cpp">
+      <Filter>tcp_socket</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="scpp.h" />
+    <ClInclude Include="curl_http.h">
+      <Filter>curl_http</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp_client.h">
+      <Filter>tcp_socket</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp_server.h">
+      <Filter>tcp_socket</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp_socket.h">
+      <Filter>tcp_socket</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
